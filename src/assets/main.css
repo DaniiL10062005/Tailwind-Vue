@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .years-months-days {
+    @apply leading-none italic font-[800] text-[3.5rem] md:text-7xl w-auto md:h-20 h-16 text-center;
+  }
+}
+@layer {
+  .clue {
+    @apply text-DMY text-xs tracking-[0.1rem] md:tracking-[0.25rem] uppercase;
+  }
+}
+@layer components {
+  .naming-of-input {
+    @apply outline-none focus:border-refColor rounded-md uppercase w-20 md:w-28 border text-base px-2 md:px-3  md:text-xl py-3 md:text-start;
+  }
+}
+@layer components {
+  .btn {
+    @apply hover:bg-buttonOnHover transition-all duration-300 bg-refColor rounded-full h-14 w-14 md:h-16 md:w-16 absolute  bottom-3 left-[50%] transform -translate-x-[50%] md:bottom-1.5 md:left-[85%]  flex items-center justify-center;
+  }
+}
